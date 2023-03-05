@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import {Link} from "react-router-dom"
 
-export default function Navbar() {
+export default function Navbar({data}) {
   function openMenu() {
     const menuContent = document.getElementById("burger_menu__container");
     if (menuContent.style.display === "flex") {
@@ -11,6 +11,8 @@ export default function Navbar() {
       menuContent.style.display = "flex";
     }
   }
+
+  console.log(data)
 
   return (
     <>

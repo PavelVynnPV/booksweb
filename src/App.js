@@ -47,7 +47,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <Navbar data={data}/>
         <Routes>
           {data.map((books) => (
             <>
