@@ -6,7 +6,7 @@ export default function Footer () {
         <footer>
             <div className={styles.container}>
             <div className={styles.footer__info}>
-                <a href="/" className={styles.logo}>{" "}</a>
+                <a href="/booksweb" className={styles.logo}>{" "}</a>
                 <p><i class="fa-solid fa-mobile-screen"></i><a className={styles.footer__link} href="tel:0994131326">+38 (044) 119 88 93</a></p>
                 <p><i class="fa-solid fa-inbox"></i><span className={styles.footer__link}>pavel.vynn@gmail.com</span></p>
                 <p className={styles.copyright}>Copyright 2022 ©UAknyga Всі права захищені</p>

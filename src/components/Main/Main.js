@@ -96,7 +96,7 @@ export default function Main({
                         src={book.img}
                         alt="book_image"
                       />
-                      <Link to="/bookpage">
+                      <Link to="/booksweb/bookpage">
                         {" "}
                         <p className={styles.book_title}>"{book.name}"</p>{" "}
                       </Link>
@@ -140,7 +140,7 @@ export default function Main({
             світу, величезна кількість жанрів: від класики до сучасних романів
           </p>
         </div>
-        <Link to="/catalog" className={styles.catalog__btn}>Перейти до каталогу</Link>
+        <Link to="/booksweb/catalog" className={styles.catalog__btn}>Перейти до каталогу</Link>
       </section>
     </main>
   );

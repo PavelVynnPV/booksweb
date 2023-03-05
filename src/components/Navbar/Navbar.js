@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Navbar.module.css";
 import {Link} from "react-router-dom"
 
-export default function Navbar({data}) {
+export default function Navbar() {
   function openMenu() {
     const menuContent = document.getElementById("burger_menu__container");
     if (menuContent.style.display === "flex") {
@@ -12,27 +12,25 @@ export default function Navbar({data}) {
     }
   }
 
-  console.log(data)
-
   return (
     <>
       <nav>
         <div className={styles.content}>
-          <Link to="/" className={styles.logo}>
+          <Link to="/booksweb" className={styles.logo}>
             {" "}
           </Link>
           <ul className={styles.nav__menu}>
             <li className={styles.nav__menu_item}>
-              <Link to="/">Головна</Link>
+              <Link to="/booksweb">Головна</Link>
             </li>
             <li className={styles.nav__menu_item}>
-              <Link to="/catalog">Каталог</Link>
+              <Link to="/booksweb/catalog">Каталог</Link>
             </li>
             <li className={styles.nav__menu_item}>
-              <a href="/">Колекція</a>
+              <a href="/booksweb">Колекція</a>
             </li>
             <li className={styles.nav__menu_item}>
-              <Link to="/favouritebooks">Улюблені</Link>
+              <Link to="/booksweb/favouritebooks">Улюблені</Link>
             </li>
           </ul>
           <div className={styles.nav__enter_search}>
@@ -40,7 +38,7 @@ export default function Navbar({data}) {
             <button className={styles.nav__subscribe_btn}>
               Спобувати підписку
             </button>
-            <a href="/" className={styles.nav__enter}>
+            <a href="/booksweb" className={styles.nav__enter}>
               Вхід
             </a>
           </div>
@@ -62,16 +60,16 @@ export default function Navbar({data}) {
       >
         <ul className={styles.nav__menu_burger_menu}>
           <li className={styles.nav__menu_item}>
-            <Link href="/">Головна</Link>
+            <Link href="/booksweb">Головна</Link>
           </li>
           <li className={styles.nav__menu_item}>
-            <Link to="/catalog">Каталог</Link>
+            <Link to="/booksweb/catalog">Каталог</Link>
           </li>
           <li className={styles.nav__menu_item}>
-            <Link to="/">Колекція</Link>
+            <Link to="/booksweb">Колекція</Link>
           </li>
           <li className={styles.nav__menu_item}>
-          <Link to="/favouritebooks">Улюблені</Link>
+          <Link to="/booksweb/favouritebooks">Улюблені</Link>
           </li>
         </ul>
         <div className={styles.nav__enter_search_burger_menu}>

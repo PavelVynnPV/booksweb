@@ -8,7 +8,6 @@ import FavouriteBooks from "./components/FavouriteBooks/FavouriteBooks";
 import Catalog from "./components/Catalog/Catalog";
 
 function App() {
-
   const [data, setData] = useState([]);
   const [bookInfo, setBookInfo] = useState({});
   const [favourites, setFavourites] = useState([]);
@@ -41,19 +40,19 @@ function App() {
 
   const getData = () => {
     fetch("https://pavelvynnpv.github.io/mybookapi/books.json")
-      .then(response => response.json())
-      .then(myJson => setData(myJson.books))
+      .then((response) => response.json())
+      .then((myJson) => setData(myJson.books));
   };
   return (
     <>
       <BrowserRouter>
-        <Navbar data={data}/>
+        <Navbar />
         <Routes>
           {data.map((books) => (
             <>
               <Route
                 exact
-                path="/"
+                path="/booksweb"
                 element={
                   <Main
                     books={books}
@@ -66,7 +65,7 @@ function App() {
               />
               <Route
                 exact
-                path="/bookpage"
+                path="/booksweb/bookpage"
                 element={
                   <BookPage
                     book={bookInfo}
@@ -78,7 +77,7 @@ function App() {
               />
               <Route
                 exact
-                path="/catalog"
+                path="/booksweb/catalog"
                 element={
                   <Catalog
                     books={books}
@@ -91,7 +90,7 @@ function App() {
               />
               <Route
                 exact
-                path="/favouritebooks"
+                path="/booksweb/favouritebooks"
                 element={
                   <FavouriteBooks
                     favourites={favourites}

@@ -20,7 +20,7 @@ export default function BookPage({
             <div>
               <h1 className={styles.bookpage__top_box_title}>{book.year}</h1>
               <p className={styles.bookpage__top_box_author}>{book.author}</p>
-              <a className={styles.bookpage__top_box_btn} href="/">
+              <a className={styles.bookpage__top_box_btn} href="/booksweb">
                 Спробувати підписку
               </a>
               <ul className={styles.bookpage__top_box_info_list}>

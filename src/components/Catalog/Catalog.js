@@ -31,7 +31,7 @@ export default function Catalog({
                       src={book.img}
                       alt="book_image"
                     />
-                    <Link to="/bookpage">
+                    <Link to="/booksweb/bookpage">
                       {" "}
                       <p className={mainStyles.book_title}>"{book.name}"</p>{" "}
                     </Link>
