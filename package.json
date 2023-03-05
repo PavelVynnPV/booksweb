@@ -1,5 +1,5 @@
 {
-  "homepage": "https://pavelvynnpv.github.io/book",
+  "homepage": "https://pavelvynnpv.github.io/bookweb",
   "name": "book-app",
   "version": "0.1.0",
   "private": true,
@@ -16,14 +16,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm start\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "json-server --w data/books.json -p 3001"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
