@@ -8,6 +8,7 @@ import FavouriteBooks from "./components/FavouriteBooks/FavouriteBooks";
 import Catalog from "./components/Catalog/Catalog";
 
 function App() {
+
   const [data, setData] = useState([]);
   const [bookInfo, setBookInfo] = useState({});
   const [favourites, setFavourites] = useState([]);
@@ -17,7 +18,7 @@ function App() {
     const bookFavourites = JSON.parse(localStorage.getItem("books")) || [];
     setFavourites(bookFavourites);
   }, []);
-  console.log(favourites);
+
   function handleOnClickAdd(book) {
     const newFavouriteListAdd = [...favourites, book];
     const saveToLocalStorage = (book) => {
@@ -39,22 +40,10 @@ function App() {
   }
 
   const getData = () => {
-    fetch("http://localhost:3001/books", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        console.log(response);
-        return response.json();
-      })
-      .then(function (myJson) {
-        console.log(myJson);
-        setData(myJson);
-      });
+    fetch("https://pavelvynnpv.github.io/mybookapi/books.json")
+      .then(response => response.json())
+      .then(myJson => setData(myJson.books))
   };
-
   return (
     <>
       <BrowserRouter>
