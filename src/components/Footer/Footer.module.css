@@ -1,0 +1,132 @@
+footer {
+    background-color: #5b5b5b;
+}
+.container {
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    gap: 50px;
+}
+.logo {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 50px;
+    display: block;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+.footer__info {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    font-size: 23px;
+}
+.footer__link, .copyright{
+    color: #fff !important;
+}
+.footer__info i{
+    color: yellow !important;
+    margin-right: 20px;
+    font-size: 40px;
+}
+.footer__info p {
+    display: flex;
+    align-items: center;
+}
+.footer__contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer__contact_icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+.footer__contact_icons i {
+    color: yellow !important;
+    font-size: 70px;
+    transition: all .5s ease;
+}
+.footer__contact_icons i:hover {
+    color: #fff !important;
+}
+.img_playstore {
+    background-image: url(../img/playstore-applestore.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 200px;
+    display: flex;
+}
+.footer__register h1 {
+    color: yellow;
+    margin-top: 0;
+}
+input {
+    background-color: #494949;
+    color: #fff;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+textarea {
+    background-color: #494949;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    min-height: 100px;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 20px;
+}
+.footer_btn {
+    background-color: yellow !important;
+    color: #494949;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+    border: 1px solid #000;
+    font-weight: bold;
+    margin: auto;
+}
+label{
+    color: #fff;
+}
+form {
+    width: 400px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+    flex-wrap: wrap;
+
+    }
+}
+
+
+@media (max-width: 920px) {
+    .container {
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__info {
+        display: none;
+    }
+}
