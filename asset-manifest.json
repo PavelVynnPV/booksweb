@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/booksweb/static/css/main.f315850d.css",
+    "main.js": "/booksweb/static/js/main.de913882.js",
+    "static/media/catalog-bg.png": "/booksweb/static/media/catalog-bg.c0c64f8139a525b3961c.png",
+    "static/media/slider-bg.png": "/booksweb/static/media/slider-bg.0819793aeffbc61a042a.png",
+    "static/media/logo.png": "/booksweb/static/media/logo.36499c5d15dc53f886a8.png",
+    "static/media/playstore-applestore.png": "/booksweb/static/media/playstore-applestore.925e90631abb5e76c56e.png",
+    "index.html": "/booksweb/index.html",
+    "main.f315850d.css.map": "/booksweb/static/css/main.f315850d.css.map",
+    "main.de913882.js.map": "/booksweb/static/js/main.de913882.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f315850d.css",
+    "static/js/main.de913882.js"
+  ]
+}
